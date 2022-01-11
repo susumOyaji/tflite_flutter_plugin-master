@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.orangeAccent,
-          title: const Text('Text classification'),
+          title: const Text('Text classification(テキスト分類)'),
         ),
         body: Container(
           padding: const EdgeInsets.all(4),
@@ -50,12 +50,12 @@ class _MyAppState extends State<MyApp> {
                   Expanded(
                     child: TextField(
                       decoration: const InputDecoration(
-                          hintText: 'Write some text here'),
+                          hintText: 'Write some text here(テキストを書く)'),
                       controller: _controller,
                     ),
                   ),
                   TextButton(
-                    child: const Text('Classify'),
+                    child: const Text('Classify(分類する)'),
                     onPressed: () {
                       final text = _controller.text;
                       final prediction = _classifier.classify(text);
